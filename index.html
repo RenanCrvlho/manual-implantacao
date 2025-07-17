@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <script src="js/script.js"></script>
+  <title>Manual</title>
+</head>
+
+<body>  
+  <div id="menu-lateral">
+    <div id="abrir-menu">
+      <span class="material-symbols-outlined menu1">menu</span>
+      <span class="material-symbols-outlined menu2 conteudo-oculto">chevron_left</span>
+    </div><!--abrir-menu-->
+    <div id="opcoes-menu">
+      <ul>
+        <li>
+          <div id="inicio" class="nova-pagina">
+            <img src="src/home.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Início</p>
+          </div>
+        </li>
+        <li>
+          <div id="filtros" class="nova-pagina">
+            <img src="src/filter.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Filtros</p>
+          </div>
+        </li>
+        <li>
+          <div id="relatorios" class="nova-pagina">
+            <img src="src/relatorio.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Relatórios</p>
+          </div>
+        </li>
+        <li>
+          <div id="tasks" class="nova-pagina">
+            <img src="src/tasks.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Tasks</p>
+          </div>
+        </li>
+        <li>
+          <div id="config-campanha" class="nova-pagina">
+            <img src="src/4c.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Configuração de Campanhas 4C</p>
+          </div>
+        </li>
+        <li>
+          <div id="termos" class="nova-pagina">
+            <img src="src/termos.png" alt="" class="link-imagem">
+            <p class="link-paragrafo">Termos e Consentimentos</p>
+          </div>
+        </li>
+      </ul>
+    </div><!--opcoes-menu-->
+  </div><!--menu-lateral-->
+  <div id="main-principal">
+    <div id="menu-superior">
+      <img src="src/home.png" alt="" class="link-imagem" id="icone">
+      <h1 id="texto-superior">Início</h1>
+
+      <div class="btn-dark">
+        <img src="src/dark.png" alt="" class="dark-img">
+        <img src="src/light.png" alt="" class="light-img conteudo-oculto">
+      </div>
+    </div><!--menu-superior-->
+
+    <div class="cabecalho-conteudo-filtro conteudo-oculto">
+      <input type="text" id="ano-filtro" placeholder="Digite aqui o ano (EX.: 2025)">  
+      <input type="text" id="filtro" placeholder="Digite aqui o nome (EX.: Pais)">
+      <button id="filtro-pesquisar" class="btn-pesquisar">Pesquisar</button>  
+    </div><!--cabecalho-conteudo-filtro-->
+
+    <div class="cabecalho-conteudo-relatorio conteudo-oculto">
+      <input type="text" id="ano-relatorio" placeholder="Digite aqui o ano (EX.: 2025)">
+      <input type="text" id="relatorio" placeholder="Digite aqui o nome (EX.: Pais)">
+      <button id="relatorio-pesquisar" class="btn-pesquisar">Pesquisar</button> 
+    </div><!--cabecalho-conteudo-relatorio-->
+    <div class="cabecalho-conteudo-task conteudo-oculto">
+      <input type="text" id="ano-task" placeholder="Digite aqui o ano (EX.: 2025)">
+      <input type="text" id="task" placeholder="Digite aqui o nome (EX.: Pais)">
+      <button id="task-pesquisar" class="btn-pesquisar">Pesquisar</button> 
+    </div><!--cabecalho-conteudo-task-->
+    <div class="cabecalho-conteudo-termo conteudo-oculto">
+      <div id="termo-crmall" class="termos">
+        <h3>Padrão CRMall</h3>
+      </div>
+      <div id="termo-multi" class="termos">
+        <h3>Padrão Multiplan</h3>
+      </div>
+      <div id="termo-syn" class="termos">
+        <h3>Padrão SYN</h3>
+      </div>
+    </div><!--cabecalho-conteudo-termo-->
+    <div id="main-conteudo">
+         
+      <div class="conteudo-filtro">        
+        <div class="corpo-conteudo-filtro">
+          <div id="filtrosDesc" class="organiza-texto conteudo-oculto">
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Loteria)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Prêmio)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Cupom)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Funcionários)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Cupom + Prêmio)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Loteria + Prêmio)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Transações)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Benefícios)</p>
+            <p class="desc-filtro"><span class="desc-filtro-ano"></span> - <span class="desc-filtro-pesquisa"></span> (Lojas Participantes)</p>
+          </div><!--filtrosDesc-->
+        </div><!--corpo-conteudo-filtro-->
+      </div><!--conteudo-filtro-->
+      <div class="conteudo-relatorio">        
+        <div class="corpo-conteudo-relatorio">          
+          <div id="relatoriosDesc" class="organiza-texto conteudo-oculto">
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Resumo de Campanha)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Gerados e Não Retirados)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Enquete)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Avaliação de Lojas)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Expiração de Brinde)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (SPA - Números da Sorte)</p>
+            <p class="desc-relatorio"><span class="desc-relatorio-ano"></span> - <span class="desc-relatorio-pesquisa"></span> (Possível Ganhador)</p>
+          </div>
+        </div><!--corpo-conteudo-relatorio-->
+      </div><!--conteudo-relatorio-->
+
+
+      <div class="conteudo-task">        
+        <div class="corpo-conteudo-task">          
+          <div id="tasksDesc" class="organiza-texto conteudo-oculto">
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Resumo de Campanha)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Gerados e Não Retirados)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Enquete)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Avaliação de Lojas)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Expiração de Brinde)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (SPA - Números da Sorte)</p>
+            <p class="desc-task"><span class="desc-task-ano"></span> - <span class="desc-task-pesquisa"></span> (Possível Ganhador)</p>
+          </div>
+        </div><!--corpo-conteudo-task-->
+      </div><!--conteudo-task-->
+      <div class="conteudo-campanha conteudo-oculto">
+        <div class="corpo-conteudo-campanha conteudo-oculto">
+          <div id="campanha" class="organiza-texto conteudo-oculto">
+            <p class="desc-campanha">Não elegível em uma ou mais regras da promoção.</p>
+            <p class="desc-campanha">O CNPJ não encontra-se cadastrado na promoção.</p>
+            <p class="desc-campanha">Liberação das notas em Moderação e Envio da SPA/ME.</p>
+            <p class="desc-campanha">Lojas participantes e/ou Restrições na participação da promoção.</p>
+            <p class="desc-campanha">Lojas participantes</p>
+            <p class="desc-campanha">Restrição na participação da promoção, consulte o regulamento.</p>
+            <p class="desc-campanha">Limite máximo de brindes atingido para esse CPF.</p>
+            <p class="desc-campanha">Prêmio EXCLUSIVO para clientes MultiVocê GOLD.</p>
+            <p class="desc-campanha">Entrada inicial de estoque</p>
+            <p class="desc-campanha">Termos e Condições da Campanha de </p>
+            <p class="desc-campanha">Extração de Arquivos de Dados - AUTHENTICATOR FACTORY</p>
+          </div>
+        </div><!--corpo-conteudo-campanha-->
+      </div><!--conteudo-campanha-->
+      <div class="conteudo-termo conteudo-oculto">
+        <div class="corpo-conteudo-termo conteudo-oculto">
+          <div id="termos-crmall" class="organiza-texto conteudo-oculto">
+            <p class="desc-termo">Li e concordo com os termos e condições da campanha, ciente de que ao aceitar, estou aderindo aos termos e regulamentos apresentados no link. (Obrigatório)</p>
+            <p class="desc-termo">Aceito receber informativos, promoções em geral e/ou ofertas de serviço ou produtos das empresas aderentes, de forma personalizada ou não, via e-mail, WhatsApp, telefone ou SMS. (Marketing)</p>
+          </div>
+          <div id="termos-multi" class="organiza-texto conteudo-oculto">
+            <p class="desc-termo">Aceita os termos do presente Regulamento.</p>
+            <p class="desc-termo">Adere a este Regulamento (contrato de adesão), ciente de que a Promotora coletará e utilizará, sem qualquer ônus, os seus dados pessoais inseridos no cadastro para formação de banco de dados, visando analisar as participações havidas nesta promoção; controlar e efetuar a distribuição dos brindes; efetuar contato e/ou enviar lhe informativos sobre esta promoção pelos meios disponibilizados no ato do cadastro: e-mail, SMS, WhatsApp, telefone; prestar contas à Secretaria de Prêmios e Apostas do Ministério da Fazenda - SPA/MF, e compartilhar os dados com empresas contratadas pelas Promotoras com a finalidade exclusiva de executar esta promoção e, para fins de Marketing, conforme detalhadamente explicado na Política de Privacidade anexa ao presente Regulamento.</p>
+          </div>
+          <div id="termos-syn" class="organiza-texto conteudo-oculto">
+            <p class="desc-termo">Li e concordo com os termos e condições da campanha, ciente de que ao aceitar, estou aderindo aos termos e regulamentos apresentados no link. (Obrigatório)</p>
+            <p class="desc-termo">Declaro ciência de que os meus dados pessoais serão tratados de acordo com os termos expostos no Aviso de Privacidade, disponível para consulta em: https://syn.com.br/aviso-privacidade/  (Obrigatório)</p>
+          </div>
+        </div><!--corpo-conteudo-campanha-->
+      </div><!--conteudo-termo-->
+    </div><!--main-conteudo-->
+  </div><!--main-principal-->
+  </div>
+</body>
+
+</html>
